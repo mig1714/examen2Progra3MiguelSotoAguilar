@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="menu.Master.cs" Inherits="Examen2_MiguelSotoAguilar.inicio" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="CSS/menucss.css" rel="stylesheet" />
+    <link href="CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="CSS/GridViewDiseno.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+           
+              <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="usuarios.aspx">Usuarios</a></li>
+                <li><a href="equipos.aspx">Equipos</a></li>
+                <li><a href="tecnicos.aspx">Técnicos</a></li>
+                <li style="float: right"><a class="active" href="#about">About</a></li>
+            </ul>
+
+            
+          
+
+
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
